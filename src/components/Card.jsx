@@ -1,5 +1,6 @@
 import React from 'react';
 import CardTemp from './CardTemp';
+import PropTypes  from 'prop-types';
 
 export default function Card({max,min,name,img,onClose}) {
   // acá va tu código
@@ -37,3 +38,12 @@ function CardTemp({label,value}) {
   )
   
 }*/
+
+Card.propTypes = { 
+  max: PropTypes.number.isRequired,
+  min: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  onClose: PropTypes.func
+}
+
