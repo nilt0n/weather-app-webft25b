@@ -10,7 +10,7 @@ export default function SearchBar({onSearch}) {
   }
   return ( 
   <div> 
-    <input type="text" />
+    <input id="search-bar-input"/>
     <button onClick={handleOnSearch}>Agregar</button>
  </div>
      )
